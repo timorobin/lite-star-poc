@@ -6,8 +6,9 @@ authors = []
 
 [tool.poetry.dependencies]
 python = ">=3.9,<4.0"
-litestar = { extras = ["standard"], version="==2.0.0b2" }
+litestar = { extras = ["standard"], version="*" }
 # litestar = { extras = ["standard"], path = "../litestar/", develop = true }
+pydantic = { version = "~2.0" }
 
 [tool.poetry.dev-dependencies]
 pre-commit = "*"
